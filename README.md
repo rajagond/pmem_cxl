@@ -47,13 +47,19 @@ make install
 Confirm IP forwarding is enabled for IPv4 and/or IPv6 on the host (0=Disabled, 1=Enabled):
 
 `$ sudo cat /proc/sys/net/ipv4/ip_forward`
+
 `1`
+
 `$ sudo cat /proc/sys/net/ipv6/conf/default/forwarding`
+
 1
+
 If necessary, activate forwarding temporarily until the next reboot:
 
 `$ sudo echo 1 > /proc/sys/net/ipv4/ip_forward`
+
 `$ sudo echo 1 > /proc/sys/net/ipv6/conf/all/forwarding`
+
 For a permanent setup create the following file:
 
 `$ sudo vim /etc/sysctl.d/50-enable-forwarding.conf`
@@ -100,7 +106,8 @@ sudo virt-install --connect qemu:///system \
 --os-type linux --os-variant ubuntu22.04 \
 --import --graphics none \
 --disk /var/lib/libvirt/images/CXL-ubuntu.qcow2,format=qcow2,bus=virtio \
---network network=default,model=virtio \
+--network network=default \
+--network bridge=virbr0,model=virtio \
 --cloud-init root-password-generate=yes,disable=yes
 
 # The temporary root password is displayed in the first few seconds. You need to make a note of this one-time password! It should be similar to the following (where * is your actual password):
