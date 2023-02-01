@@ -9,9 +9,9 @@ Autumn 2022 - Spring 2023
 
 ###### Requirements
 
-- Host OS - Ubuntu 20.04
-- Guest OS - Ubuntu 20.04
-- Qemu - v
+- Host OS - Ubuntu 22.04
+- Guest OS - Ubuntu 22.04
+- Qemu - v2.0v4
 - Virtualization is enabled in the BIOS
   `ls lscpu | grep
    Virtualization Virtualization:                  VT-x`
