@@ -1,0 +1,1 @@
+cmd_/home/raja/Desktop/Spring-2023/RnD2/pmem_cxl/cxl_rnd2/LKM_NUMA_NODE/Module.symvers := sed 's/\.ko$$/\.o/' /home/raja/Desktop/Spring-2023/RnD2/pmem_cxl/cxl_rnd2/LKM_NUMA_NODE/modules.order | scripts/mod/modpost -m -a  -o /home/raja/Desktop/Spring-2023/RnD2/pmem_cxl/cxl_rnd2/LKM_NUMA_NODE/Module.symvers -e -i Module.symvers   -T -
