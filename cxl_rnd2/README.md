@@ -10,6 +10,10 @@ cause major disruption in computing world. WHY CXL?, HOW? and NOW WHAT? regardin
 
 Presentation can be found [here](docs/cxl_talk.pdf) or may be [here](https://docs.google.com/presentation/d/1V5IIIIfu82-IV3CvjJevFOEz2vnPA4-doTfuw6IyYsY/edit?usp=sharing) also.
 
+### RnD2 Report and Presentation
+- Report - [Link](docs/190050096_rnd2_report.pdf)
+- Presentation - [Link](docs/emucxl_presentation.pdf)
+
 ### How to emulate CXL using qemu and kvm?
 
 #### References
